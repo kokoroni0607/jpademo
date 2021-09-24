@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fenixs namespace="com.example.jpademo.repository.JpaSysUserRepository">
+    <!-- 这是一条完整的 Fenix 查询语句块，必须填写 fenix 标签的 id 属性. -->
+    <fenix id="getUserByCondition">
+        SELECT
+        u
+        FROM
+        SysUser u
+        where u.name LIKE '%@{condition.name}%'
+    </fenix>
+</fenixs>
